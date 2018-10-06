@@ -18,3 +18,33 @@
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </center>
+
+## Expected Output
+
+```bash
+$ vapor cloud deploy
+app: FirstVapor
+git: https://github.com/AngusY/myNewApp.git
+env: beta
+db: none
+replicas: 1
+replica size: free
+branch: master
+build: clean
+Creating deployment [Done]
+Connecting to build logs ...
+Waiting in Queue [Done]
+Starting deployment: 'firstvapor-angus' [Done]
+Getting project from Git 'https://github.com/AngusY/myNewApp.git' [Done]
+Checkout branch 'master' [Done]
+Verifying base folder [Done]
+Selected swift version: 4.2.0 [Done]
+Building vapor (release) [Done]
+Trying to find executable [Done]
+Found executable: Run [Done]
+Creating container registry [Done]
+Building container [Done]
+Updating replicas [Done]
+Deployment succeeded: https://firstvapor-angus-beta.vapor.cloud [Done]
+Successfully deployed.
+```
